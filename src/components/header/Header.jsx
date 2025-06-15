@@ -1,6 +1,8 @@
 import TaskLystLogo_light from "../../assets/images/TaskLyst-Logo-Light.png";
 import TaskListLogo_Dark from "../../assets/images/TaskLyst-Logo-Dark.png";
 import { useTheme } from "../../context/ThemeContext";
+import TaskLyst_title_light from "../../assets/images/TaskLyst-title-light.png";
+import TaskLyst_title_dark from "../../assets/images/TaskLyst-title-dark.png";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
 
@@ -19,9 +21,13 @@ const Header = () => {
         <img
           src={theme === "light" ? TaskLystLogo_light : TaskListLogo_Dark}
           alt="TaskLyst Logo"
-          className="h-16"
+          className="h-14 md:h-16"
         />
-        <h3 className="font-extrabold text-2xl">TaskLyst</h3>
+        <img
+          src={theme === "light" ? TaskLyst_title_light : TaskLyst_title_dark}
+          alt=""
+          className="h-9 md:h-10"
+        />
       </div>
 
       <button
